@@ -31,7 +31,7 @@ Add:
 
 {{> DiffBox tutorialName="angular-meteor" step="3.1"}}
 
-to the beginning of the `app.js` file.
+to the beginning of the `app.ng.js` file.
 
 Notice that this code runs outside of the `isClient` statement.
 
