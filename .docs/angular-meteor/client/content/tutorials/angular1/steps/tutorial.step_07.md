@@ -87,20 +87,20 @@ So now let's re-structure our app (to see the end result and all the steps in gi
 
 {{> DiffBox tutorialName="angular-meteor" step="7.2"}}
 
-4.Create a `server` folder under the root folder. Everything inside that folder will run only on the server. Now create a folder called `startup` under the `server` folder and create a file called `loadParties.js` under it. Now go to `app.js`, cut all the code inside the `if (Meteor.isServer)` statement and place it inside the `loadParties.js` file. Again, no need for the if statement anymore because all the code inside the `server` folder runs only on the server.
+4.Create a `server` folder under the root folder. Everything inside that folder will run only on the server. Now create a folder called `startup` under the `server` folder and create a file called `loadParties.js` under it. Now go to `server.js`, cut all the code inside the `if (Meteor.isServer)` statement and place it inside the `loadParties.js` file. Again, no need for the if statement anymore because all the code inside the `server` folder runs only on the server.
 
 {{> DiffBox tutorialName="angular-meteor" step="7.3"}}
 
-5.Create a file called `routes.js` under the `client` folder. Cut the `.config` code that defines the routes and paste it inside that file.
+5.Create a file called `routes.js` under the `client` folder. Cut the code that defines the routes in `app.ng.js` and paste it inside that file.
 
 {{> DiffBox tutorialName="angular-meteor" step="7.4"}}
 
 6.Create a folder called `parties` inside the `client` folder. and inside it create another two folders. one called `controllers` and one called `views`.
-7.Create a new file inside the `client->parties->controllers` folder called `partiesList.js`. Cut the code for the `PartiesListCtrl` from `app.js` and place it in there.
+7.Create a new file inside the `client->parties->controllers` folder called `partiesList.js`. Cut the code for the `PartiesListCtrl` from `app.ng.js` and place it in there.
 
 {{> DiffBox tutorialName="angular-meteor" step="7.5"}}
 
-8.Create a new file inside the `client->parties->controllers` folder called `partyDetails.js`. Cut the code for the `PartyDetailsCtrl` from `app.js` and place it in there.
+8.Create a new file inside the `client->parties->controllers` folder called `partyDetails.js`. Cut the code for the `PartyDetailsCtrl` from `app.ng.js` and place it in there.
 
 {{> DiffBox tutorialName="angular-meteor" step="7.6"}}
 
